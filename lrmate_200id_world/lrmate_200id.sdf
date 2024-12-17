@@ -38,7 +38,7 @@
                 </material>
             </visual>
         </link>
-        <joint name='J1' type='revolute'>
+        <joint name='j1' type='revolute'>
             <pose relative_to='Base'>0 0 0.042741 0 -0 0</pose>
             <parent>Base</parent>
             <child>L1</child>
@@ -57,7 +57,7 @@
             </axis>
         </joint>
         <link name='L1'>
-            <pose relative_to='J1'>0 0 0 0 -0 0</pose>
+            <pose relative_to='j1'>0 0 0 0 -0 0</pose>
             <inertial>
                 <pose>0.039191 -0.000668 0.318431 0 -0 0</pose>
                 <mass>14.3549</mass>
@@ -94,7 +94,7 @@
                 </material>
             </visual>
         </link>
-        <joint name='J2' type='revolute'>
+        <joint name='j2' type='revolute'>
             <pose relative_to='L1'>0.05 0 0.28726 0 -0 0</pose>
             <parent>L1</parent>
             <child>L2</child>
@@ -113,7 +113,7 @@
             </axis>
         </joint>
         <link name='L2'>
-            <pose relative_to='J2'>0 0 0 0 -0 0</pose>
+            <pose relative_to='j2'>0 0 0 0 -0 0</pose>
             <inertial>
                 <pose>-0.007993 -0.001801 0.121256 0 -0 0</pose>
                 <mass>6.36136</mass>
@@ -150,7 +150,7 @@
                 </material>
             </visual>
         </link>
-        <joint name='J3' type='revolute'>
+        <joint name='j3' type='revolute'>
             <pose relative_to='L2'>0 0 0.33 0 -0 0</pose>
             <parent>L2</parent>
             <child>L3</child>
@@ -169,7 +169,7 @@
             </axis>
         </joint>
         <link name='L3'>
-            <pose relative_to='J3'>0 0 0 0 -0 0</pose>
+            <pose relative_to='j3'>0 0 0 0 -0 0</pose>
             <inertial>
                 <pose>0.008237 0.00068 0.017646 0 -0 0</pose>
                 <mass>2.39426</mass>
@@ -206,7 +206,7 @@
                 </material>
             </visual>
         </link>
-        <joint name='J4' type='revolute'>
+        <joint name='j4' type='revolute'>
             <pose relative_to='L3'>0.088001 0 0.035027 0 -0 0</pose>
             <parent>L3</parent>
             <child>L4</child>
@@ -225,7 +225,7 @@
             </axis>
         </joint>
         <link name='L4'>
-            <pose relative_to='J4'>0 0 0 0 -0 0</pose>
+            <pose relative_to='j4'>0 0 0 0 -0 0</pose>
             <inertial>
                 <pose>0.108899 0.008914 0.05615 0 -0 0</pose>
                 <mass>0.000826213</mass>
@@ -262,7 +262,7 @@
                 </material>
             </visual>
         </link>
-        <joint name='J5' type='revolute'>
+        <joint name='j5' type='revolute'>
             <pose relative_to='L4'>0.2454 0 0 0 -0 0</pose>
             <parent>L4</parent>
             <child>L5</child>
@@ -281,7 +281,7 @@
             </axis>
         </joint>
         <link name='L5'>
-            <pose relative_to='J5'>0 0 0 0 -0 0</pose>
+            <pose relative_to='j5'>0 0 0 0 -0 0</pose>
             <inertial>
                 <pose>0.00558 0.003772 -7.4e-05 0 -0 0</pose>
                 <mass>0.353026</mass>
@@ -318,7 +318,7 @@
                 </material>
             </visual>
         </link>
-        <joint name='J6' type='revolute'>
+        <joint name='j6' type='revolute'>
             <pose relative_to='L5'>0.05 0 0 1.5708 -0 0</pose>
             <parent>L5</parent>
             <child>L6</child>
@@ -337,7 +337,7 @@
             </axis>
         </joint>
         <link name='L6'>
-            <pose relative_to='J6'>0 0 0 0 -0 0</pose>
+            <pose relative_to='j6'>0 0 0 0 -0 0</pose>
             <inertial>
                 <pose>0.012509 -0 -2.8e-05 0 -0 0</pose>
                 <mass>0.0932132</mass>
@@ -373,6 +373,6 @@
                         <specular>0.8 0.8 0.3 1</specular>
                 </material>
             </visual>
-        </link>            
+        </link>     
     </model>
 </sdf>    
