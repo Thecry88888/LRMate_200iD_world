@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<sdf version="1.7">        
+    <model name='Belt'>
+        <pose>0 0 0 0 0 0</pose>
+        <link name='belt'>
+            <inertial>
+                <mass>120.14395</mass>
+                <inertia>
+                    <ixx>0.095329</ixx>
+                    <ixy>0</ixy>
+                    <ixz>0</ixz>
+                    <iyy>0.381317</iyy>
+                    <iyz>0</iyz>
+                    <izz>0.476646</izz>
+                </inertia>
+            </inertial>
+            <visual name='visual'>
+                <geometry>
+                    <mesh>
+                        <scale>1e-3 1e-3 1e-3</scale>
+                        <uri>model://meshes/ConveyorBelt.stl</uri>
+                    </mesh>
+                </geometry>
+                <!--let's add color to our link-->
+                <material>
+                    <ambient>0.3 0.3 0.3 1</ambient>
+                    <diffuse>0.3 0.3 0.3 1</diffuse>
+                    <specular>0.3 0.3 0.3 1</specular>
+                </material>
+            </visual>
+            <collision name='collision'>
+                <geometry>
+                    <mesh>
+                        <scale>1e-3 1e-3 1e-3</scale>
+                        <uri>model://meshes/ConveyorBelt.stl</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+        </link>
+    </model>
+</sdf>
